@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TestSuite1,,,,2019-10-09 14:29:15,2019-10-09 14:29:31,16.557s,INCOMPLETE
+,,,,,,,
+Test Cases/CalculatorTests/Addition,,,,2019-10-09 14:29:15,2019-10-09 14:29:22,6.436s,PASSED
+"sendRequest(findTestObject(""CalculatorSoapService/Addition""))",,,,2019-10-09 14:29:15,2019-10-09 14:29:19,3.490s,PASSED
+"Result = sendRequestAndVerify(findTestObject(""CalculatorSoapService/Addition""))",,,,2019-10-09 14:29:19,2019-10-09 14:29:22,2.749s,PASSED
+,,,,,,,
+Test Cases/CalculatorTests/Subtract,,,,2019-10-09 14:29:22,2019-10-09 14:29:24,2.340s,PASSED
+"Result = sendRequest(findTestObject(""CalculatorSoapService/Subtract""))",,,,2019-10-09 14:29:22,2019-10-09 14:29:24,2.192s,PASSED
+,,,,,,,
+Test Cases/GetBankDetails,,,,2019-10-09 14:29:24,2019-10-09 14:29:25,1.390s,PASSED
+"sendRequest(findTestObject(""SOAP/getBank""))",,,,2019-10-09 14:29:24,2019-10-09 14:29:25,1.234s,PASSED
+,,,,,,,
+Test Cases/ListUsersTest,,,,2019-10-09 14:29:25,2019-10-09 14:29:28,2.717s,PASSED
+"sendRequest(findTestObject(""UserRestService/ListUsers""))",,,,2019-10-09 14:29:25,2019-10-09 14:29:27,1.311s,PASSED
+"response = sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,,2019-10-09 14:29:27,2019-10-09 14:29:28,1.251s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Lindsay"")",,,,2019-10-09 14:29:28,2019-10-09 14:29:28,0.010s,PASSED
+"verifyElementPropertyValue(response, ""data[3].id"", ""10"")",,,,2019-10-09 14:29:28,2019-10-09 14:29:28,0.012s,PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,,,2019-10-09 14:29:28,2019-10-09 14:29:28,0.007s,PASSED
+,,,,,,,
+Test Cases/TestHTTPMethods,,,,2019-10-09 14:29:28,2019-10-09 14:29:31,3.450s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,,2019-10-09 14:29:28,2019-10-09 14:29:29,1.041s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/DeleteUser""))",,,,2019-10-09 14:29:29,2019-10-09 14:29:30,0.724s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/UpdateUser""))",,,,2019-10-09 14:29:30,2019-10-09 14:29:31,0.764s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/CreateUser""))",,,,2019-10-09 14:29:31,2019-10-09 14:29:31,0.819s,PASSED
